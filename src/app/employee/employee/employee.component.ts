@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { title } from 'process';
 // import { Employee } from './employee';
 
 @Component({
@@ -18,11 +19,13 @@ export class EmployeeComponent implements OnInit {
 
   email: string = 'Abhijit@dnt.com';
 
-  hidden: boolean = false;
+  hiddenVar: boolean = false;
   toggle() {
-    this.hidden = !this.hidden;
+    this.hiddenVar = !this.hiddenVar;
   }
-  constructor() { }
+  constructor() { 
+    title: "employee23";
+  }
 
   ngOnInit() {
   }

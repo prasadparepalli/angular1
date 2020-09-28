@@ -1,4 +1,16 @@
 <p>
-  employee works!
+  employee works3!
 </p>
-{ { name }}
+<!-- string interpolation : with the help of {{ }} no spaces b/w two consequetive curly braces-->
+{{ name }}
+
+<!-- property binding : with the help of []-->
+<div [hidden]="hiddenVar" [innerText]="email">
+  <label>56</label>
+</div>
+
+<label>{{hiddenVar}}+5</label>
+
+<!-- event binding : event should be mentioned in () -->
+<button (click)="toggle()">Toggle</button>
+
